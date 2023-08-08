@@ -1,0 +1,28 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+	"customizations": {
+		"codespaces": {
+			"openFiles": []
+		},
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "~/.python/current/bin/python3",
+				"python.linting.enabled": true,
+				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+				"python.linting.flake8Enabled": true
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [				
+				"ms-python.python",
+				"ms-python.vscode-pylance",			
+				"ms-python.black-formatter",
+				"ms-python.pylint",
+				"ms-toolsai.jupyter",
+				"GitHub.copilot"
+			]
+		},
+		"settings": {
+			"python.defaultInterpreterPath": "~/.python/current/bin/python3"
+		}
+	}
+}
